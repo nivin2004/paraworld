@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nivin Prasad">
+    <meta name="description"
+        content="This page contains all the things I am learning how to create as I learn html. ">
+    <title>My First Web Page</title>
+    <link rel="icon" href="html5.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Hello World!</h1>
+        <nav aria-label="primary-navigation">
+            <a href="#html">Learning Html</a><br>
+            <a href="#downloads">Downloads</a><br>
+            <a href="#contact">Contact Me</a>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        <h2>Im ready to learn html</h2>
+        <p>This is my first web page.</p>
+        <img src="img/HTMLLOGO.png" alt="HTML5 Logo" title="I am learning HTML5" width="300" height="300">
+        <figure>
+            <figcaption>HTML Code example</figcaption>
+            <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+        </figure>
+
+        <h3>My Daily Schedule</h3>
+        <p>
+            Let me tell you how: <br>&nbsp;...I learn more about web dev.
+            <br>...I plan out my schedule. <br>I use resources from
+            <abbr title="Mozilla Developer Network">
+                <a href="https://developer.mozilla.org/en-US/">MDN</a>
+            </abbr>
+        </p>
+        <aside>
+            <details>
+                <summary><mark> Enthelum</mark> okke adich vidande..</summary>
+                <p>yes adich vidanam</p>
+            </details>
+        </aside>
+        <br>
+        <table>
+            <caption>My Daily Schedule</caption>
+            <thead>
+                <tr>
+                    <th colspan="3">&nbsp;</th>
+                    
+                </tr>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th scope="col" >Time</th>
+                    <th scope="col" >Activity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Morning</th>
+                    <td>
+                        <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+                    </td>
+                    <td>Write Code</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Break</th>
+                    <td>
+                        <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+                    </td>
+                    <td>Eat Lunch</td>
+                </tr>
+                <tr>
+                    <th scope="row">Afternoon</th>
+                    <td>
+                        <time datetime="12:00">12pm</time>-<time datetime="17:00">5pm</time>
+                    </td>
+                    <td>Study for Other Courses</td>
+                </tr>
+                <tr>
+                    <th scope="row">Evening</th>
+                    <td rowspan="2">
+                        All Other Times
+                    </td>
+                    <td>
+                        Free Time
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Night</th>
+                    <td>Sleep</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">
+                        And thats the footer!
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr>
+        <article id="html">
+            <h2>Ithil oru bendhavum illa</h2>
+            <p>Nokki irunno.karyam illa</p>
+            <p>Entha <em>nokunne</em></p>
+
+            <h3>Veruthe adutha oru paragraph</h3>
+            <p>ithilum <strong>prethyekich</strong> onnum illa.</p>
+        </article>
+        <figure>
+            <img src="img/smile.png" alt="smiling image" title="njettiyo   nee" width="400" height="225"
+                loading="lazy">
+            <figcaption>smiling image</figcaption>
+        </figure>
+
+        <hr>
+        <h3>address element test</h3>
+        <address>Thrissur</address>
+        <hr>
+        <h3>List</h3>
+        <p>How this works:</p>
+        <ol>
+            <li>first list item</li>
+            <li>second list item</li>
+        </ol>
+
+        <h3>List 2</h3>
+
+        <p>How this works:</p>
+        <ul>
+            <li>first list item</li>
+            <li>second list item</li>
+        </ul>
+        <h3>List 3</h3>
+
+        <p>How this works:</p>
+        <dl>
+            <dt>First item</dt>
+            <dd>veruthe ezhuthukayanu</dd>
+
+            <dt>second item</dt>
+            <dd>ithum veruthe</dd>
+
+            <dt>third item</dt>
+            <dd>ith pinne parayandallo</dd>
+        </dl>
+        <article id="contact">
+         <h2>
+            Contact Me
+         </h2>
+         <p>
+            Id really like to hear from you!
+         </p>
+         <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+                <legend>Form Heading</legend>
+            <p>
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on" required autofocus>
+            </p>
+            <p>
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" id="lastName" placeholder="Rahul" autocomplete="on" required>
+            </p>
+            <p>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="private"  required>
+            </p>
+            <p>
+            <label for="phone">Phone no:</label>
+            <input type="tel" name="phone" id="phone" placeholder="9074006052" pattern="[0-9]{10}"  required>
+            </p>
+            <p>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" min="6" max="17" value="12" step="1">
+            </p>
+            
+            <p>
+                <label for="food">Favorite Food:</label>
+                <select name="food" id="food">
+                   <optgroup label="Coffees">
+                    <option value="regular coffee">Regular Coffee</option> <option value="special coffee" selected>Special Coffee</option>
+                </optgroup>
+            <optgroup label="Snacks">
+                <option value="puffs">Puffs</option>
+                <option value="samosa">Samosa</option>
+                <option value="pazhambori">Pazhambori</option>
+            </optgroup>
+            </select>
+            </p>
+        </fieldset>
+            
+            <!--<p>
+                <label for="food">Favorite Food</label>
+                <input type="text" name="food" id="food" list="food-list">
+                <datalist id="food-list">
+                    <option value="1">Samosa</option>
+                    <option value="2">Pazhambori</option>
+                </datalist>
+                
+            </p>-->
+            <fieldset>
+                <legend>Second Form Heading</legend>
+                <input type="radio" name="colour" id="blue" value="blue">
+                <label for="blue">Blue</label>
+                <input type="radio" name="colour" id="red" value="red">
+                <label for="red">Red</label>
+                <input type="radio" name="colour" id="yellow" value="yellow">
+                <label for="yellow">Yellow</label>
+            </fieldset>
+            <fieldset>
+                <legend>Third Form Heading</legend>
+                <p>
+                <input type="checkbox" name="opinion" id="good" value="good">
+                <label for="good">Good</label>
+            </p>
+                <p>
+                <input type="checkbox" name="opinion" id="bad" value="bad">
+                <label for="bad">Bad</label>
+            </p>
+            </fieldset>
+<fieldset>
+    <legend>Fourth Form Heading</legend>
+    <label for="message">Your Message</label>
+    <br>
+    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message"></textarea>
+</fieldset>
+<input type="submit" value="aa">
+<br>
+<button type="submit">
+Submit
+</button>
+<br>
+<button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+<br>
+<button type="reset">
+Reset
+</button>
+         </form>
+        </article>
+        <hr>
+    </main>
+    
+    <footer>
+        <article id="downloads">
+            <h3>Downloads</h3>
+            <ul>
+                <li>Download the <a href="html5.png" download> html logo</a></li>
+                <li>
+                    Text me at <a href="mailto:nivinprasad2004@gmaill.com">email id</a>
+                </li>
+                <li>Call me at:<a href="tel:9074006052">phone number</a></li>
+                <li>
+                    Open <a href="https://www.google.com" target="_blank">Google</a>
+                </li>
+            </ul>
+        </article>
+
+        <!--TODO:Add more places-->
+        &lt;&copy; <a href="about.html">Nivin Prasad</a>&gt;
+    </footer>
+</body>
+
+</html>
